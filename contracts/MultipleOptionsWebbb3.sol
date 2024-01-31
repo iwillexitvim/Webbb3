@@ -75,7 +75,7 @@ contract Webbb3 {
     if (userVotesNumber > 0) {
       require(
         block.timestamp - getVotes()[userVotesNumber - 1].date > hour,
-        "You already votes in the last hour"
+        "You already voted in the last hour"
       );
     }
 
